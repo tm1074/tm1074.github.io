@@ -1,47 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tharini Mohangiri | Portfolio</title>
+
+    <title>Tharini Mohangiri | Portfolio</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f5f5f5;
-            color: #222;
+
+        * {
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background-color: #F3EFE7;
+            color: #302C27;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+
         header {
-            background-color: #1f2937;
-            color: white;
+            background-color: #29251F;
+            color: #F3EFE7;
             text-align: center;
-            padding: 60px 20px;
+            padding: 90px 20px;
+            border-bottom: 5px solid #7A5C43;
         }
 
         header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 52px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
         }
 
         header p {
-            font-size: 20px;
+            font-size: 18px;
+            color: #D6C9B8;
+            max-width: 750px;
+            margin: auto;
         }
+
+        /* NAVIGATION */
+
+        nav {
+            background-color: #3A3027;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #F3EFE7;
+            margin: 0 18px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        nav a:hover {
+            color: #D6C9B8;
+            text-decoration: none;
+        }
+
+        /* SECTIONS */
 
         section {
             max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
+            margin: 45px auto;
+            padding: 35px 40px;
+            background-color: #FAF8F3;
+            border: 1px solid #D6C9B8;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(60, 45, 30, 0.08);
         }
 
         h2 {
-            color: #1f2937;
-            border-bottom: 2px solid #ddd;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #4A3728;
+            font-size: 28px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #C8B8A5;
             padding-bottom: 10px;
+            margin-bottom: 25px;
         }
+
+        h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #4A3728;
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        /* SKILLS */
 
         .skills {
             display: flex;
@@ -50,104 +105,264 @@
         }
 
         .skill {
-            background-color: #e5e7eb;
-            padding: 10px 15px;
-            border-radius: 20px;
+            background-color: #E8DED0;
+            color: #4A3728;
+            padding: 8px 15px;
+            border: 1px solid #D1C1AE;
+            border-radius: 3px;
+            font-size: 14px;
         }
+
+        /* PROJECTS */
 
         .project {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #DED4C8;
         }
 
-        .project h3 {
-            margin-bottom: 5px;
+        .project:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
         }
+
+        .project p {
+            color: #4A4540;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #7A5C43;
+            color: #F3EFE7;
+            border-radius: 3px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            background-color: #4A3728;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        /* GENERAL LINKS */
 
         a {
-            color: #2563eb;
+            color: #7A5C43;
+            font-weight: bold;
             text-decoration: none;
         }
 
         a:hover {
+            color: #4A3728;
             text-decoration: underline;
         }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #29251F;
+            color: #D6C9B8;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 12px;
+            }
+
+            section {
+                margin: 25px 15px;
+                padding: 25px;
+            }
+
+        }
+
     </style>
 </head>
 
+
 <body>
 
+    <!-- HEADER -->
+
     <header>
-        <h1>Tharini Mohangiri </h1>
-        <p>Supply Chain Management & Business Analytics and Information Technology Student at Rutgers University - New Brunswick</p>
+
+        <h1>Tharini Mohangiri</h1>
+
+        <p>
+            Supply Chain Management & Business Analytics and Information Technology
+            Student at Rutgers University - New Brunswick
+        </p>
+
     </header>
 
-    <section>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#projects">Projects</a>
+
+    </nav>
+
+
+    <!-- PERSONAL STATEMENT -->
+
+    <section id="about">
+
         <h2>Personal Statement</h2>
 
         <p>
-           I am a business student combining supply chain management, business analytics, and technology with an interest in corporate law using analytical problem-solving to address complex business challenges.
+            I am a business student combining supply chain management,
+            business analytics, and technology with an interest in corporate law,
+            using analytical problem-solving to address complex business challenges.
         </p>
+
     </section>
 
-    <section>
-    <h2>Skills</h2>
 
-    <div class="skills">
-        <div class="skill">Legal Document Analysis</div>
-        <div class="skill">Microsoft Excel</div>
-        <div class="skill">R Programming</div>
-        <div class="skill">Basic Python</div>
-        <div class="skill">Debate & Public Speaking</div>
-        <div class="skill">Event Organization</div>
-        <div class="skill">Leadership</div>
-        <div class="skill">Analytical Problem-Solving</div>
-    </div>
-</section>
+    <!-- SKILLS -->
 
-  <section>
-    <h2>Projects</h2>
+    <section id="skills">
 
-    <div class="project">
-        <h3>Financial Distress Simulation & Prediction</h3>
+        <h2>Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Legal Document Analysis</div>
+
+            <div class="skill">Microsoft Excel</div>
+
+            <div class="skill">R Programming</div>
+
+            <div class="skill">Basic Python</div>
+
+            <div class="skill">Debate & Public Speaking</div>
+
+            <div class="skill">Event Organization</div>
+
+            <div class="skill">Leadership</div>
+
+            <div class="skill">Analytical Problem-Solving</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+
+        <div class="project">
+
+            <h3>Financial Distress Simulation & Prediction</h3>
+
+            <p>
+                Analyzed company financial data through a financial distress
+                simulation, including profit simulations, standardized financial
+                comparisons, and predictions of company financial health.
+                Compared results from Logistic Regression, XGBoost, and Extra Trees
+                models to evaluate the consistency of predictions and identify
+                companies with different levels of financial risk.
+            </p>
+
+            <a class="project-link"
+               href="Financial_Distress_2026Spring_Portfolio.xlsx">
+                View Project
+            </a>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>R Time Series Project</h3>
+
+            <p>
+                Used R to analyze time series data, apply regression models,
+                and evaluate model residuals to identify patterns and
+                relationships within business data.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>International Business Case Study Analysis</h3>
+
+            <p>
+                Analyzed an international business case by applying concepts
+                related to global markets, business strategy, and economic
+                conditions to evaluate business challenges and develop
+                evidence-based conclusions.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>International Supply Chain & Environmental Regulation Research</h3>
+
+            <p>
+                Ongoing research examining international supply chains through
+                the lens of environmental regulation, including the effects of
+                regulatory requirements on supply chain relationships, contracts,
+                compliance, and corporate responsibility.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>Tharini Mohangiri</p>
+
         <p>
-            Analyzed company financial data through a financial distress simulation,
-            including profit simulations, standardized financial comparisons, and
-            predictions of company financial health. Compared results from Logistic
-            Regression, XGBoost, and Extra Trees models to evaluate the consistency
-            of predictions and identify companies with different levels of financial
-            risk.
+            Supply Chain Management | Business Analytics & Information Technology
         </p>
-      <a href="Financial Distress_2026Spring_Portfolio.xlsx">View Project</a>
-    </div>
 
-    <div class="project">
-        <h3>R Time Series Project</h3>
-        <p>
-            Used R to analyze time series data, apply regression models, and
-            evaluate model residuals to identify patterns and relationships
-            within business data.
-        </p>
-    </div>
+    </footer>
 
-    <div class="project">
-        <h3>International Business Case Study Analysis</h3>
-        <p>
-            Analyzed an international business case by applying concepts related
-            to global markets, business strategy, and economic conditions to
-            evaluate business challenges and develop evidence-based conclusions.
-        </p>
-    </div>
-
-    <div class="project">
-        <h3>International Supply Chain & Environmental Regulation Research</h3>
-        <p>
-            Ongoing research examining international supply chains through the
-            lens of environmental regulation, including the effects of
-            regulatory requirements on supply chain relationships, contracts,
-            compliance, and corporate responsibility.
-        </p>
-    </div>
-
-</section>
 </body>
+
 </html>
